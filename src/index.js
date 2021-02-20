@@ -98,8 +98,11 @@ function BookList() {
 }
 
 const Book = ({ pos, code, title, author, image }) => {
+  const clickHandler = () => {
+    console.log("Click " + code);
+  };
   return (
-    <article className="book">
+    <article className="book" onClick={clickHandler}>
       <div className="position">#{pos}</div>
       <div className="cover">
         <img src={image} alt=""></img>
