@@ -6,7 +6,7 @@ let root = document.getElementById("root");
 
 function BookList() {
   return (
-    <section>
+    <section className="booklist">
       <Book code="86421" pos="1" />
       <Book code="90652" pos="2" />
       <Book code="63231" pos="3" />
@@ -22,7 +22,7 @@ function BookList() {
 }
 
 const Book = (props) => (
-  <article>
+  <article className="book">
     <Position pos={props.pos} />
     <Image /> <Description code={props.code} />
   </article>
@@ -36,7 +36,9 @@ const Description = (props) => {
   );
 };
 const Image = (props) => (
-  <img src="https://source.unsplash.com/random/150x200" alt=""></img>
+  <div className="cover">
+    <img src="https://source.unsplash.com/random/150x200" alt=""></img>
+  </div>
 );
 const Title = (props) => <h1>Book {props.code}</h1>;
 const Author = () => <p>Autore</p>;

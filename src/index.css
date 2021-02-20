@@ -1,52 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section {
+.booklist {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-article {
+.book {
   border: 1px solid darkslategrey;
-  padding: 5px;
-  width: 350px;
-  height: 350px;
+  width: 352px;
+  height: 352px;
   text-align: center;
   position: relative;
 }
 
-article:hover {
+.book:hover {
   border: 3px solid green;
-  padding: 5px;
-  width: 346px;
-  height: 346px;
+  width: 356px;
+  height: 356px;
+  margin: -2px;
 }
 
 .description {
-    text-align: left;
-    width: 90%;
-    margin: 10px auto;
+  text-align: left;
+  width: 90%;
+  margin: 10px auto;
 }
-article img {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.cover {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-
 
 .position {
-    width: 30px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    padding-top: 3px;
+  width: 30px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  padding-top: 3px;
 }
