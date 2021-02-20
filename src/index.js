@@ -11,6 +11,7 @@ const books = [
     title: "Tinico Lewis Townsend hrS",
     author: "Sarah Page",
     image: "https://source.unsplash.com/random/200x201",
+    description: "this is a description of book.",
   },
   {
     pos: 2,
@@ -18,6 +19,7 @@ const books = [
     title: "Tijojje Derek Carr Xov",
     author: "Victor Hart",
     image: "https://source.unsplash.com/random/200x202",
+    description: "this is a description of book.",
   },
   {
     pos: 3,
@@ -25,6 +27,7 @@ const books = [
     title: "Ugumefev Logan Hunter sXM",
     author: "Roxie Carr",
     image: "https://source.unsplash.com/random/200x203",
+    description: "this is a description of book.",
   },
   {
     pos: 4,
@@ -32,6 +35,7 @@ const books = [
     title: "Tuhhuoku Rose Joseph sxZ",
     author: "Cameron Holloway",
     image: "https://source.unsplash.com/random/200x204",
+    description: "this is a description of book.",
   },
   {
     pos: 5,
@@ -39,6 +43,7 @@ const books = [
     title: "Ricobju Mollie Johnston Gpk",
     author: "Verna Jimenez",
     image: "https://source.unsplash.com/random/200x205",
+    description: "this is a description of book.",
   },
   {
     pos: 6,
@@ -46,6 +51,7 @@ const books = [
     title: "Rigihi Antonio Sandoval Opo",
     author: "Edward Matthews",
     image: "https://source.unsplash.com/random/200x206",
+    description: "this is a description of book.",
   },
   {
     pos: 7,
@@ -53,6 +59,7 @@ const books = [
     title: "Hopluhuf Hattie Klein mZx",
     author: "Frederick Norman",
     image: "https://source.unsplash.com/random/200x207",
+    description: "this is a description of book.",
   },
   {
     pos: 8,
@@ -60,6 +67,7 @@ const books = [
     title: "Mudepal Johnny Blair oeO",
     author: "Micheal Guzman",
     image: "https://source.unsplash.com/random/200x208",
+    description: "this is a description of book.",
   },
   {
     pos: 9,
@@ -67,6 +75,7 @@ const books = [
     title: "Hunrehfev Chester Boone ZTZ",
     author: "Rosa Stone",
     image: "https://source.unsplash.com/random/200x209",
+    description: "this is a description of book.",
   },
   {
     pos: 10,
@@ -74,21 +83,22 @@ const books = [
     title: "Uhwetuc Adele Shelton lNV",
     author: "Philip Gregory",
     image: "https://source.unsplash.com/random/200x210",
+    description: "this is a description of book.",
   },
 ];
 
 function BookList() {
   return (
     <section className="booklist">
-      {books.map((e) => {
-        return <Book props={e} key={e.code} />;
+      {books.map((book, index) => {
+        return <Book key={index} {...book} />;
       })}
     </section>
   );
 }
 
 const Book = (props) => {
-  const { pos, code, title, author, image } = props.props;
+  const { pos, code, title, author, image } = props;
   return (
     <article className="book">
       <div className="position">#{pos}</div>
@@ -97,9 +107,7 @@ const Book = (props) => {
       </div>
       <div className="description">
         <p>{code}</p>
-        <h1>
-         {title}
-        </h1>
+        <h1>{title}</h1>
         <p>{author.toUpperCase()}</p>
       </div>
     </article>
