@@ -97,8 +97,7 @@ function BookList() {
   );
 }
 
-const Book = (props) => {
-  const { pos, code, title, author, image } = props;
+const Book = ({ pos, code, title, author, image }) => {
   return (
     <article className="book">
       <div className="position">#{pos}</div>
