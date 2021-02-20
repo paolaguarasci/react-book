@@ -20,7 +20,7 @@
 }
 
 .book:hover {
-  border: 3px solid green;
+  border: 3px solid darkolivegreen;
   width: 356px;
   height: 356px;
   margin: -2px;
@@ -38,7 +38,7 @@
 
 .position {
   width: 30px;
-  background-color: red;
+  background-color: darkred;
   color: white;
   font-weight: bold;
   font-family: sans-serif;
