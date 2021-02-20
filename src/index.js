@@ -2,9 +2,10 @@ import { Tooltip, Toast, Popover } from "bootstrap";
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import { BookList } from "./BookList";
 
 let root = document.getElementById("root");
-const books = [
+export const books = [
   {
     pos: 1,
     code: 9712802837379,
@@ -86,34 +87,5 @@ const books = [
     description: "this is a description of book.",
   },
 ];
-
-function BookList() {
-  return (
-    <section className="booklist">
-      {books.map((book, index) => {
-        return <Book key={index} {...book} />;
-      })}
-    </section>
-  );
-}
-
-const Book = ({ pos, code, title, author, image }) => {
-  const clickHandler = () => {
-    console.log("Click " + code);
-  };
-  return (
-    <article className="book" onClick={clickHandler}>
-      <div className="position">#{pos}</div>
-      <div className="cover">
-        <img src={image} alt=""></img>
-      </div>
-      <div className="description">
-        <p>{code}</p>
-        <h1>{title}</h1>
-        <p>{author.toUpperCase()}</p>
-      </div>
-    </article>
-  );
-};
 
 ReactDOM.render(<BookList />, root);
