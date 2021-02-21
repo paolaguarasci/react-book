@@ -1,6 +1,6 @@
 import React from "react";
 import { Book } from "./Book";
-import { books } from "./index";
+import { books } from "./books";
 
 export function BookList() {
   return (
