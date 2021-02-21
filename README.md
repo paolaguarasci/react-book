@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Book react example
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c43783c2-9705-497d-bbed-65172d2fd071/deploy-status)](https://app.netlify.com/sites/bookpgreact/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # react-book
